@@ -79,8 +79,20 @@ public class AVLTree: Equatable {
         return self.balance()
     }
     
-    func removing(nodeWithKey: Int) -> AVLTree? {
-        return nil
+    func removing(nodeWithKey key: Int) -> AVLTree? {
+        if key < self.key {
+            self.left = self.left?.removing(nodeWithKey: key)
+        }
+        else if key > self.key {
+            self.right = self.right?.removing(nodeWithKey: key)
+        }
+        else {
+            let q = self.left
+            let r = self.right
+            if r == nil { return q }
+            else { return q }
+        }
+        return self.balance()
     }
     
     public static func == (lhs: AVLTree, rhs: AVLTree) -> Bool {
