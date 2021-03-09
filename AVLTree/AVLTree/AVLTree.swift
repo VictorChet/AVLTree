@@ -13,6 +13,6 @@ public class AVLTree: Equatable {
     }
     
     public static func == (lhs: AVLTree, rhs: AVLTree) -> Bool {
-        return true
+        return lhs.key == rhs.key
     }
 }
