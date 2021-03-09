@@ -1,9 +1,18 @@
-public struct AVLTree {
+public class AVLTree: Equatable {
     
     let key: Int
     
-    func insert(_ node: AVLTree) {
-        
+    var left: AVLTree?
+    
+    init(key: Int) {
+        self.key = key
     }
     
+    func insert(_ node: AVLTree) {
+        self.left = node
+    }
+    
+    public static func == (lhs: AVLTree, rhs: AVLTree) -> Bool {
+        return true
+    }
 }
