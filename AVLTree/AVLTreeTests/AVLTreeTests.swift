@@ -88,5 +88,12 @@ class AVLTreeTests: XCTestCase {
         sut = sut?.inserting(left3)
         XCTAssertEqual(left3, sut?.left?.left)
     }
+    
+    func testRemove() {
+        var sut: AVLTree? = AVLTree(key: 4)
+        sut = sut?.inserting(AVLTree(key: 3))
+        sut = sut?.inserting(AVLTree(key: 5))
+        sut = sut?.removing(nodeWithKey: 4)
+    }
 
 }
