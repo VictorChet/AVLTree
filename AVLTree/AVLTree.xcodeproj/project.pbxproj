@@ -10,8 +10,8 @@
 		6BB043DD25F7A6B0008157CF /* AVLTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB043D325F7A6B0008157CF /* AVLTree.framework */; };
 		6BB043E225F7A6B0008157CF /* AVLTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB043E125F7A6B0008157CF /* AVLTreeTests.swift */; };
 		6BB043E425F7A6B0008157CF /* AVLTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB043D625F7A6B0008157CF /* AVLTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BB043F025F7A6F7008157CF /* AVLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB043EF25F7A6F7008157CF /* AVLNode.swift */; };
-		6BB043F325F7A751008157CF /* AVLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB043EF25F7A6F7008157CF /* AVLNode.swift */; };
+		6BB043F025F7A6F7008157CF /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB043EF25F7A6F7008157CF /* AVLTree.swift */; };
+		6BB043F325F7A751008157CF /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB043EF25F7A6F7008157CF /* AVLTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,7 @@
 		6BB043DC25F7A6B0008157CF /* AVLTreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVLTreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB043E125F7A6B0008157CF /* AVLTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTreeTests.swift; sourceTree = "<group>"; };
 		6BB043E325F7A6B0008157CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BB043EF25F7A6F7008157CF /* AVLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLNode.swift; sourceTree = "<group>"; };
+		6BB043EF25F7A6F7008157CF /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 			children = (
 				6BB043D625F7A6B0008157CF /* AVLTree.h */,
 				6BB043D725F7A6B0008157CF /* Info.plist */,
-				6BB043EF25F7A6F7008157CF /* AVLNode.swift */,
+				6BB043EF25F7A6F7008157CF /* AVLTree.swift */,
 			);
 			path = AVLTree;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BB043F025F7A6F7008157CF /* AVLNode.swift in Sources */,
+				6BB043F025F7A6F7008157CF /* AVLTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BB043E225F7A6B0008157CF /* AVLTreeTests.swift in Sources */,
-				6BB043F325F7A751008157CF /* AVLNode.swift in Sources */,
+				6BB043F325F7A751008157CF /* AVLTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
