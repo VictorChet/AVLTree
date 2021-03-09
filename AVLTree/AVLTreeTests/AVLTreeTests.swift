@@ -95,6 +95,7 @@ class AVLTreeTests: XCTestCase {
         sut = sut?.inserting(AVLTree(key: 5))
         sut = sut?.removing(nodeWithKey: 4)
         XCTAssertNotNil(sut)
+        XCTAssertEqual(sut?.height, 2)
     }
 
 }
