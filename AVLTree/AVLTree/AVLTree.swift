@@ -83,6 +83,16 @@ public class AVLTree: Equatable {
         return self.left?.min() ?? self
     }
     
+    private func removingMin() -> AVLTree? {
+        if self.left == nil {
+            return self.right
+        }
+        else {
+            self.left = self.left!.removingMin()
+            return self.balance()
+        }
+    }
+    
     func removing(nodeWithKey key: Int) -> AVLTree? {
         if key < self.key {
             self.left = self.left?.removing(nodeWithKey: key)
@@ -96,6 +106,7 @@ public class AVLTree: Equatable {
             if r == nil { return q }
             else {
                 let min = r!.min()!
+                min.right = r!.removingMin()
                 min.left = q
                 return min.balance()
             }

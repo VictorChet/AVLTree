@@ -96,6 +96,17 @@ class AVLTreeTests: XCTestCase {
         sut = sut?.removing(nodeWithKey: 4)
         XCTAssertNotNil(sut)
         XCTAssertEqual(sut?.height, 2)
+        var expected: AVLTree? = AVLTree(key: 5)
+        expected = expected?.inserting(AVLTree(key: 3))
+        XCTAssertEqual(sut, expected)
+        sut = sut?.inserting(AVLTree(key: 7))
+        sut = sut?.inserting(AVLTree(key: 6))
+        sut = sut?.removing(nodeWithKey: 5)
+        XCTAssertNotNil(sut?.right)
+        expected = AVLTree(key: 6)
+        expected = expected?.inserting(AVLTree(key: 3))
+        expected = expected?.inserting(AVLTree(key: 7))
+        XCTAssertEqual(sut, expected)
     }
 
 }
